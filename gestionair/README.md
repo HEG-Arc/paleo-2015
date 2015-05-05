@@ -4,12 +4,20 @@ Gestion'air is a web-based controller to run a call center simulation.
 
 ## Web controller
 
-Based on web.py
+web.py
 
 ## Task manager
 
-Based on celery
+Celery
 
 ## Cache
 
 Redis
+
+## Media control
+
+Pyglet
+
+## U-HID library
+
+PyUSB
