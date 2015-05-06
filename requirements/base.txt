@@ -1,0 +1,5 @@
+# Base requirements for the Gestion'air 2015 application
+
+celery
+daemon
+evdev
