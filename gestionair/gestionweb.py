@@ -23,13 +23,19 @@
 import web
 
 urls = (
-    '/', 'index'
+    '/', 'index',
+    '/api/command/start_demo/', 'start_demo'
 )
 
 
 class index:
     def GET(self):
         return "Hello, my name is Gestion'air!"
+
+
+class start_demo:
+    def GET(self):
+        return "Demo started"
 
 if __name__ == "__main__":
     app = web.application(urls, globals())
