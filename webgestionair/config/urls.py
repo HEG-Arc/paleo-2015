@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 
+from webgestionair.results.views import ResultsRedirectView
+
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name="home"),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name="about"),
@@ -19,7 +21,8 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # Your stuff: custom urls includes go here
-
+    url(r'^results/', include("webgestionair.results.urls", namespace="results")),
+    url(r'^r/(?P<pk>\d+)/$', ResultsRedirectView.as_view(), name='results-redirect-view'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
