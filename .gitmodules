@@ -13,3 +13,4 @@
 [submodule "screens"]
 	path = screens
 	url = git://github.com/HEG-Arc/paleo-2015-screens.git
+	branch = master
