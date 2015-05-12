@@ -1,0 +1,15 @@
+[submodule "gestionair/control"]
+	path = gestionair/control
+	url = git://github.com/HEG-Arc/paleo-2015-gestionair-control.git
+[submodule "gestionair/uhid"]
+	path = gestionair/uhid
+	url = git://github.com/HEG-Arc/paleo-2015-gestionair-uhid.git
+[submodule "gestionair/web"]
+	path = gestionair/web
+	url = git://github.com/HEG-Arc/paleo-2015-gestionair-web.git
+[submodule "gestionair/tv"]
+	path = gestionair/tv
+	url = git://github.com/HEG-Arc/paleo-2015-gestionair-tv.git
+[submodule "screens"]
+	path = screens
+	url = git://github.com/HEG-Arc/paleo-2015-screens.git
